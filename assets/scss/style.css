@@ -546,11 +546,6 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 1024px) {
   .steps_in {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (max-width: 768px) {
-  .steps_in {
     grid-template-columns: repeat(1, 1fr);
   }
 }
@@ -558,7 +553,6 @@ p, h1, h2, h3, h4, h5, h6 {
   box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.0784313725);
   background: #FFFFFF;
   border-radius: 30px;
-  overflow: hidden;
 }
 @media (max-width: 1024px) {
   .steps_card {
@@ -567,6 +561,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .steps_card_top {
   position: relative;
+  overflow: hidden;
 }
 .steps_card img {
   width: 100%;
@@ -623,6 +618,30 @@ p, h1, h2, h3, h4, h5, h6 {
 @media (max-width: 1024px) {
   .steps_card a {
     margin: 16px auto;
+  }
+}
+.steps_card_in {
+  position: relative;
+}
+.steps .steps_icon {
+  position: absolute;
+  top: 30px;
+  right: -35px;
+  z-index: 2;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  background: #72C779;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 1024px) {
+  .steps .steps_icon {
+    bottom: -30px;
+    top: auto;
+    right: 20px;
+    transform: rotate(90deg);
   }
 }
 
